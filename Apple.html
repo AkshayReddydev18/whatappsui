@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <style>
+      .main {
+        height: 530px;
+        width: 920px;
+        position: relative;
+       
+        
+      }
+      .up,
+      .down {
+        
+        position: absolute;
+        height: 55px;
+        width: 930px;
+        font-family: italic;
+        position:fixed;
+        z-index: 1;
+        left: 0px;
+      }
+      .up{
+      top: 0px;
+      background-color:   #688480;
+      }
+      .dp,
+      .dot {
+        height: 40px;
+        width: 40px;
+        border-radius: 40px;
+        position: absolute;
+        top: 10px;
+      
+      }
+      .dot {
+        left: 860px;
+      }
+      #call {
+        position: absolute;
+        top: 15px;
+        left: 810px;
+      }
+      #video {
+        position: absolute;
+        top: 15px;
+        left: 730px;
+      }
+      h3 {
+        position: absolute;
+        left: 60px;
+        font-size: 21px;
+        top: -15px;
+        z-index: 1;
+        font-weight: bolder;
+        font-style: italic;
+      }
+      label {
+        position: absolute;
+        font-style: normal;
+        left: 60px;
+        top: 35px;
+      }
+      .down {
+        top: 500px;
+        position: relative;
+        position: fixed;
+      }
+      #emoji {
+        position: absolute;
+        left: px;
+        top: 6px;
+      }
+      #attachment {
+        position: absolute;
+        left: 70px;
+        top: 10px;
+      }
+      input {
+        position: absolute;
+        font-size: 20px;
+        left: 120px;
+        top: 5px;
+        border-radius: 30px;
+        background-color: transparent;
+        width: 730px;
+        height: 50px;
+        outline: none;
+      }
+      #mic {
+        position: relative;
+        left: 870px;
+        top: 15px;
+      }
+      .middle {
+        position: absolute;
+        background-color:rgb(210, 231, 210);
+        overflow: scroll;
+        top: 52px;
+        left: -8px;
+        scrollbar-width: none;
+        height: 500px;
+        width: 925px;
+        overflow: scroll;
+      }
+      span {
+        text-align: left;
+        font-size: 20px;
+        margin-left: 20px;
+      }
+      p {
+        text-align: right;
+        font-size: 20px;
+        margin-right: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="up">
+        <img src="./csspic.jpeg" alt="" class="dp" />
+        <h3>Apple</h3>
+        <label for="">Online</label>
+
+        <i id="video" class="fa fa-video-camera" style="font-size: 25px"></i>
+        <i id="call" class="fa fa-phone" style="font-size: 25px"></i>
+        <img src="./3dots.png" alt="" class="dot" />
+      </div>
+      <div class="middle">
+        <p>hi</p>
+        <span>hlo</span>
+        <p>how do you do</p>
+        <span>how do you do</span>
+        <p>doing good</p>
+        <span>well doing great</span>
+        <p>a</p>
+        <span>b</span>
+        <p>c</p>
+        <span>d</span>
+        <p>e</p>
+        <span>f</span>
+        <p>g</p>
+        <span>h</span>
+        <p>i</p>
+        <span>j</span>
+      </div>
+      <div class="down">
+        <span id="emoji" style="font-size: 30px">&#128512;</span>
+        <i id="attachment" class="material-icons" style="font-size: 35px"
+          >attachment</i
+        >
+        <input type="search" name="search" placeholder="Type a message" />
+        <i id="mic" class="fa fa-microphone" style="font-size: 30px"></i>
+      </div>
+    </div>
+  </body>
+</html>

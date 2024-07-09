@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      .container {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        border: 2px solid black;
+        /* background-color: white; */
+        position: relative;
+      }
+      .aside {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        background-color: rgb(210, 231, 210);
+        border: 2px solid transparent;
+      }
+      .head {
+        height: 70px;
+        width: 300px;
+        background-color: transparent;
+        color: rgb(8, 8, 8);
+        position: relative;
+      
+      }
+      .bigbox {
+        border: 2px solid transparent;
+        height: 450px;
+        overflow-y: scroll;
+        scrollbar-width: none;
+        text-decoration: none;
+        background-color:rgb(210, 231, 210);
+      }
+      .cam {
+        height: 30px;
+        width: 30px;
+        position: absolute;
+        top: 25px;
+        left: 231px;
+      }
+      .dot3 {
+        height: 30px;
+        width: 30px;
+        position: absolute;
+        top: 23px;
+        left: 260px;
+      }
+      .qr {
+        height: 25px;
+        width: 25px;
+        position: absolute;
+        top: 26px;
+        left: 195px;
+      }
+      input {
+        background-color: transparent;
+        width: 290px;
+        height: 30px;
+        border-radius: 50px;
+      }
+      .box {
+        height: 50px;
+        width: 301px;
+        position: relative;
+        
+      }
+      .boxdp{
+        height: 45px;
+        width: 45px;
+        border-radius: 45px;
+      }
+      p {
+        position: absolute;
+        left: 55px;
+        top: -18px;
+        font-size: 21px;
+        font-style:italic;
+        font-weight: bolder;
+      }
+      h2 {
+        position: absolute;
+        top: 5px;
+      }
+      iframe,.screen {
+        position: absolute;
+        height: 550px;
+        width: 950px;
+        left: 305px;
+      }
+      label{
+        font-size: normal;
+      }
+
+       [target="myscreen"]{
+        text-decoration: none;
+        color: black;
+        width: 925px;
+
+       }
+       span{
+        color: rgb(33, 191, 235);
+       }
+
+         
+      
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="aside">
+        <div class="head">
+          <h2><b>WhatsApp</b></h2>
+          <img class="cam" src="./camera.png" alt="camera" />
+          <img class="dot3" src="./3dots.png"  alt="3dots"/>
+          <img class="qr" src="./qr-code.png" alt="qr" />
+        </div>
+        <div class="nav">
+          <input type="text" placeholder="Search.." name="search"  autofocus/>
+        </div>
+      </div>
+      <div class="bigbox">
+        <div class="box">
+          <img src="./dp9.jpg" alt="" class="boxdp" />
+          <p>Teddy</p>
+        </div>
+        <div class="box">
+          <img src="./modi.jpeg" alt="apple" class="boxdp" />
+          <p>PM Modi</p>
+        </div>
+        <div class="box">
+          <img src="./dp1.webp" alt="bit" class="boxdp" />
+          <p>Soldier</p>
+        </div>
+        <a href="./Apple.html" target="myscreen">
+          <div class="box">
+            <img src="./csspic.jpeg" alt="apple" class="boxdp" />
+            <p>Apple</p> <span>&#10004&#10004</span><label for="">Hi apple</label>
+          </div>
+        </a>
+        <div class="box">
+          <img src="./dp5.jpg" alt="mail" class="boxdp" />
+          <p>Akshay</p>
+        </div>
+        <div class="box">
+          <img src="./img1.jpeg" alt="img1" class="boxdp" />
+          <p>Chintu</p>
+        </div>
+        <div class="box">
+          <img src="./img2.png" alt="img2" class="boxdp" />
+          <p>Vivek</p>
+        </div>
+        <div class="box">
+          <img src="./img4.jpeg" alt="img4" class="boxdp" />
+          <p>Vinod</p>
+        </div>
+        <div class="box">
+          <img src="./dp8.jpeg" alt="insta" class="boxdp" />
+          <p>Vijay</p>
+        </div>
+        <div class="box">
+          <img src="./social.png" alt="" class="boxdp" />
+          <p>Snapchat</p>
+        </div>
+        <div class="box">
+          <img src="./netflix.png" alt="" class="boxdp" />
+          <p>Netflix</p>
+        </div>
+        <div class="box">
+          <img src="./shin2.jpeg" alt="" class="boxdp" />
+          <p>Shinchan</p>
+        </div>
+        <div class="box">
+          <img src="./dp2.webp" alt="" class="boxdp" />
+          <p>Chinnu</p>
+        </div>
+        <div class="box">
+          <img src="./beach.jpg" alt="" class="boxdp" />
+          <p>GoaTrip</p>
+        </div>
+        <div class="box">
+          <img src="./peace3.jpeg" alt="" class="boxdp" />
+          <p>Peace</p>
+        </div>
+      </div>
+      <iframe class="screen" src="./back.html" name="myscreen"></iframe>
+    </div>
+  </body>
+</html>
