@@ -20,9 +20,10 @@
       .aside {
         display: flex;
         flex-direction: column;
-        width: 300px;
+        width: 301px;
         background-color: rgb(210, 231, 210);
         border: 2px solid transparent;
+        /* z-index: 1; */
       }
       .head {
         height: 70px;
@@ -30,22 +31,20 @@
         background-color: transparent;
         color: rgb(8, 8, 8);
         position: relative;
-      
       }
       .bigbox {
         border: 2px solid transparent;
         height: 450px;
         overflow-y: scroll;
         scrollbar-width: none;
-        text-decoration: none;
-        background-color:rgb(210, 231, 210);
+        background-color: rgb(210, 231, 210);
       }
       .cam {
         height: 30px;
         width: 30px;
         position: absolute;
         top: 25px;
-        left: 231px;
+        left: 228px;
       }
       .dot3 {
         height: 30px;
@@ -71,9 +70,20 @@
         height: 50px;
         width: 301px;
         position: relative;
-        
+        column-gap: 5px;
+        color: black;
       }
-      .boxdp{
+      a:link {
+        text-decoration: none;
+      }
+      div.box:hover {
+        background-color: aliceblue;
+      }
+      img:hover {
+        background-color: aliceblue;
+      }
+
+      .boxdp {
         height: 45px;
         width: 45px;
         border-radius: 45px;
@@ -83,35 +93,47 @@
         left: 55px;
         top: -18px;
         font-size: 21px;
-        font-style:italic;
+        font-style: italic;
         font-weight: bolder;
       }
       h2 {
         position: absolute;
         top: 5px;
       }
-      iframe,.screen {
+      iframe,
+      .screen {
         position: absolute;
         height: 550px;
         width: 950px;
         left: 305px;
+        top: 0px;
       }
-      label{
+      label {
         font-size: normal;
       }
 
-       [target="myscreen"]{
+      [target="myscreen"] {
         text-decoration: none;
         color: black;
         width: 925px;
-
-       }
-       span{
+      }
+      span {
         color: rgb(33, 191, 235);
-       }
-
-         
-      
+      }
+      [class="singletick"] {
+        color: rgb(137, 137, 137);
+      }
+      .bluetick {
+        height: 20px;
+        width: 20px;
+        top: 70px;
+      }
+      .blacktick {
+        height: 20px;
+        width: 20px;
+        color: brown;
+        /* background-color: aquamarine; */
+      }
     </style>
   </head>
   <body>
@@ -120,76 +142,131 @@
         <div class="head">
           <h2><b>WhatsApp</b></h2>
           <img class="cam" src="./camera.png" alt="camera" />
-          <img class="dot3" src="./3dots.png"  alt="3dots"/>
+          <img class="dot3" src="./3dots.png" alt="3dots" />
           <img class="qr" src="./qr-code.png" alt="qr" />
         </div>
         <div class="nav">
-          <input type="text" placeholder="Search.." name="search"  autofocus/>
+          <input type="text" placeholder="Search.." name="search" autofocus />
         </div>
       </div>
       <div class="bigbox">
-        <div class="box">
-          <img src="./dp9.jpg" alt="" class="boxdp" />
-          <p>Teddy</p>
-        </div>
-        <div class="box">
-          <img src="./modi.jpeg" alt="apple" class="boxdp" />
-          <p>PM Modi</p>
-        </div>
-        <div class="box">
-          <img src="./dp1.webp" alt="bit" class="boxdp" />
-          <p>Soldier</p>
-        </div>
+        <a href="./teddy.html" target="myscreen">
+          <div class="box">
+            <img src="./dp9.jpg" alt="" class="boxdp" />
+            <p>Teddy</p>
+            <label for="">hi buddy</label>
+          </div>
+        </a>
+        <a href="./modi.html" target="myscreen"
+          ><div class="box">
+            <img src="./modi.jpeg" alt="apple" class="boxdp" />
+            <p>PM Modi Ji</p>
+            <img class="bluetick" src="./blue.png" alt="" /><label for=""
+              >Bye Modi ji</label
+            >
+          </div>
+        </a>
+        <a href="./soldier.html" target="myscreen"
+          ><div class="box">
+            <img src="./dp1.webp" alt="bit" class="boxdp" />
+            <p>Soldier</p>
+            <label for="">fir milte hai</label>
+          </div></a
+        >
         <a href="./Apple.html" target="myscreen">
           <div class="box">
             <img src="./csspic.jpeg" alt="apple" class="boxdp" />
-            <p>Apple</p> <span>&#10004&#10004</span><label for="">Hi apple</label>
+            <p>Apple</p>
+            <label for="">hey are there</label>
           </div>
         </a>
-        <div class="box">
-          <img src="./dp5.jpg" alt="mail" class="boxdp" />
-          <p>Akshay</p>
-        </div>
-        <div class="box">
-          <img src="./img1.jpeg" alt="img1" class="boxdp" />
-          <p>Chintu</p>
-        </div>
-        <div class="box">
-          <img src="./img2.png" alt="img2" class="boxdp" />
-          <p>Vivek</p>
-        </div>
-        <div class="box">
-          <img src="./img4.jpeg" alt="img4" class="boxdp" />
-          <p>Vinod</p>
-        </div>
-        <div class="box">
-          <img src="./dp8.jpeg" alt="insta" class="boxdp" />
-          <p>Vijay</p>
-        </div>
-        <div class="box">
-          <img src="./social.png" alt="" class="boxdp" />
-          <p>Snapchat</p>
-        </div>
-        <div class="box">
-          <img src="./netflix.png" alt="" class="boxdp" />
-          <p>Netflix</p>
-        </div>
-        <div class="box">
-          <img src="./shin2.jpeg" alt="" class="boxdp" />
-          <p>Shinchan</p>
-        </div>
-        <div class="box">
-          <img src="./dp2.webp" alt="" class="boxdp" />
-          <p>Chinnu</p>
-        </div>
-        <div class="box">
-          <img src="./beach.jpg" alt="" class="boxdp" />
-          <p>GoaTrip</p>
-        </div>
-        <div class="box">
-          <img src="./peace3.jpeg" alt="" class="boxdp" />
-          <p>Peace</p>
-        </div>
+        <a href="./akshay.html" target="myscreen"
+          ><div class="box">
+            <img src="./dp5.jpg" alt="mail" class="boxdp" />
+            <p>Akshay</p>
+            <label for="">akshay,have you done </label>
+          </div>
+        </a>
+        <a href="./sushanth.html" target="myscreen"
+          ><div class="box">
+            <img src="./img1.jpeg" alt="img1" class="boxdp" />
+            <p>Sushanth</p>
+            <label for="">akshay,have you done </label>
+          </div></a
+        >
+        <a href="./vivek.html" target="myscreen"
+          ><div class="box">
+            <img src="./img2.png" alt="img2" class="boxdp" />
+            <p>Vivek</p>
+            <img class="bluetick" src="./blue.png" alt="" /><label for=""
+              >have you done
+            </label>
+          </div></a
+        >
+        <a href="./vinod.html" target="myscreen"
+          ><div class="box">
+            <img src="./img4.jpeg" alt="img4" class="boxdp" />
+            <p>Vinod</p>
+            <label for="">send me the code bro? </label>
+          </div></a
+        >
+        <a href="./Vijay.html" target="myscreen"
+          ><div class="box">
+            <img src="./dp8.jpeg" alt="insta" class="boxdp" />
+            <p>Vijay</p>
+            <img class="bluetick" src="./blue.png" alt="" /><label for=""
+              >how are doing man?
+            </label>
+          </div></a
+        >
+        <a href="./snap.html" target="myscreen"
+          ><div class="box">
+            <img src="./social.png" alt="" class="boxdp" />
+            <p>Snapchat</p>
+            <label for="">Thank you </label>
+          </div></a
+        >
+        <a href="./netflix.html" target="myscreen"
+          ><div class="box">
+            <img src="./netflix.png" alt="" class="boxdp" />
+            <p>Netflix</p>
+            <label for="">Watch latest movies on Netflix </label>
+          </div></a
+        >
+        <a href="./shinchan.html" target="myscreen"
+          ><div class="box">
+            <img src="./shin2.jpeg" alt="" class="boxdp" />
+            <p>Shinchan</p>
+            <img class="bluetick" src="./blue.png" alt="" /><label for=""
+              >hey,have you done project
+            </label>
+          </div></a
+        >
+        <a href="./chinnu.html" target="myscreen"
+          ><div class="box">
+            <img src="./dp2.webp" alt="" class="boxdp" />
+            <p>Chinnu</p>
+            <img class="bluetick" src="./blue.png" alt="" /><label for=""
+              >have you done
+            </label>
+          </div></a
+        >
+        <a href="./goa Trip.html" target="myscreen"
+          ><div class="box">
+            <img src="./beach.jpg" alt="" class="boxdp" />
+            <p>GoaTrip</p>
+            <label for="">guys have packed your bags </label>
+          </div></a
+        >
+        <a href="./peace.html" target="myscreen"
+          ><div class="box">
+            <img src="./peace3.jpeg" alt="" class="boxdp" />
+            <p>Peace</p>
+            <img class="bluetick" src="./blue.png" alt="" /><label for=""
+              >how do you doing
+            </label>
+          </div></a
+        >
       </div>
       <iframe class="screen" src="./back.html" name="myscreen"></iframe>
     </div>
